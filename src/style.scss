@@ -1,0 +1,22 @@
+body{
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.light{
+--bgColor:rgb(199, 199, 36) ;
+--textColor: black;
+--newBg:red;
+--aboutBgColor:#F0ECE3;;
+};
+
+.dark{
+  --bgColor:black;
+  --textColor: white;
+  --newBg:green;
+  --aboutBgColor:#F9E4C8;
+};

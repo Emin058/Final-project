@@ -1,0 +1,84 @@
+section{
+  width: 100%;
+ 
+ 
+}
+
+
+
+.footer_hrTag{
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom:40px;
+};
+
+.footer_last_hrTag{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top:40px;
+}
+.hero{
+ 
+  width: 100%;
+  // height: 100vh;
+  padding-top: 50px;
+ background-color: var(--aboutBgColor);
+ h1{
+  color: var(--textColor)
+ }
+ 
+};
+
+// .footerLinksName{
+//   margin-top: 150px;
+// };
+
+
+.footerFaqLink,.footerSellerLink,.footerSupportLink,.footerBlogLink,.footerBestProductstLink,.footerAboutLink{
+  text-decoration: none;
+  color: grey;
+};
+
+
+
+
+
+
+
+.footerBoldLink{
+  font-weight: 500;
+  color: black;
+  margin-right: 10px;
+  margin-left: 5px;
+  text-decoration: none;
+};
+
+.footerLastContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px
+};
+
+.footerWebLinks{
+  display: flex;
+}
+
+.webLinks{
+  margin-right: 10px;
+};
+
+.footerBoldItems{
+  margin-bottom: 20px;
+};
+
+p{
+  color: grey;
+}
+
+// @media (max-width:576px) {
+//   .footerIcons{height: ;}
+// }
+

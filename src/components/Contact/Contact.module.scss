@@ -1,0 +1,76 @@
+.hero{
+  width: 100%;
+ 
+ background-color: var(--aboutBgColor);
+//  h1{
+//   color: var(--textColor)
+//  }
+}
+
+
+.pageName{
+ 
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 50px
+};
+
+.phoneInformation{
+
+  height: 200px;
+  width: 270px;
+  background: rgb(255 234 229);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px
+  
+};
+
+.phoneLogo,.emailLogo,.addressLogo{
+  width: 50px;
+  height: 50px
+};
+
+.emailInformation{
+  background-color: rgb(211 239 255);
+    height: 200px;
+  width: 270px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px
+};
+
+.addressInformation{
+  width: 590px;
+  background: rgb(231 242 236);
+  height: 200px;
+  width: 270px;
+  // padding: 20px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  };
+
+.phoneAndEmailContainer{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 30px;
+margin-top: 30px;
+
+};
+
+.contactsInfoContainer{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+

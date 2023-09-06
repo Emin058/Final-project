@@ -1,0 +1,47 @@
+
+.hero{
+  width: 100%;
+  height: 100vh;
+ background-color: var(--aboutBgColor);
+//  h1{
+//   color: var(--textColor)
+//  }
+}
+
+
+.pageName{
+  text-align: center;
+  margin-bottom: 80px;
+  background-color: var(--aboutBgColor);
+  padding: 50px;
+  
+};
+
+.infoAboutContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutPageImage{
+  width: 400px;
+  height: 400px;
+  // margin-right: 40px;
+  
+};
+
+.h1_commerce{
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 100px;
+};
+
+.aboutWebsite{
+  margin-bottom: 20px;
+};
+
+.contactBtn{
+  background-color: orange;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
