@@ -23,6 +23,7 @@ const dispatch=useDispatch()
                 <th scope="col">Id</th>
                 <th scope="col">Image</th>
                 <th scope="col">Title</th>
+                <th scope="col">Description</th>
               
                 <th scope="col"></th>
               </tr>
@@ -37,6 +38,7 @@ const dispatch=useDispatch()
                         <img className={styles.image} src={item.imageUrl} />
                       </td>
                       <td>{item.title}</td>
+                      <td>{item.description}</td>
                      
                      
                       <td>
@@ -46,12 +48,12 @@ const dispatch=useDispatch()
                         >
                           Delete
                         </button>
-                        {/* <Link to={`/editBlog/${item.id}`}
+                        <Link to={`/editBlog/${item.id}`}
                           className="btn btn-warning"
                      
                         >
                           Edit
-                        </Link> */}
+                        </Link>
                       </td>
                     </tr>
                   </>

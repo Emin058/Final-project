@@ -29,20 +29,11 @@ import { UseSelector, useSelector } from "react-redux";
 import Faq from "../components/Faq/Faq.jsx";
 import EditBlog from "../components/EditBlog/EditBlog";
 const AppRouter = () => {
+  const blogs = useSelector((state) => state.BlogReducer);
 
-
-
-  const blogs =useSelector((state)=>state.BlogReducer)
-
-useEffect(()=>{
-localStorage.setItem("Blog",JSON.stringify(blogs))
-},[blogs])
-
-
-
-
-
-
+  useEffect(() => {
+    localStorage.setItem("Blog", JSON.stringify(blogs));
+  }, [blogs]);
 
   const { darkMode } = useContext(GlobalTheme);
   return (
@@ -73,13 +64,13 @@ localStorage.setItem("Blog",JSON.stringify(blogs))
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/shop" element={<Shop />} />
                   <Route path="/blogs" element={<Blog />} />
-                  <Route path="/faq" element={<Faq/>} />
-                  <Route path="/addBlog" element={<AddBlog/>} />
-                  <Route path="/editBlog/:id" element={<EditBlog/>} />
+                  <Route path="/faq" element={<Faq />} />
+                  <Route path="/addBlog" element={<AddBlog />} />
+                  <Route path="/editBlog/:id" element={<EditBlog />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/register" element={<Register />} />
                   <Route path="/dashboard" element={<Dashboard />} />
-                   <Route path="/product/:id" element={<ProductDetail />} />
+                  <Route path="/product/:id" element={<ProductDetail />} />
                 </Routes>
                 <Footer />
               </BrowserRouter>
