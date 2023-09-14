@@ -28,6 +28,7 @@ import AddBlog from "../components/AddBlog/AddBlog";
 import { UseSelector, useSelector } from "react-redux";
 import Faq from "../components/Faq/Faq.jsx";
 import EditBlog from "../components/EditBlog/EditBlog";
+import ScrollBtn from "../ScrollBtn/ScrollBtn";
 const AppRouter = () => {
   const blogs = useSelector((state) => state.BlogReducer);
 
@@ -42,6 +43,7 @@ const AppRouter = () => {
         <WishlistProvider>
           <CartProvider>
             <DataProvider>
+              <ScrollBtn/>
               <BrowserRouter>
                 <ToastContainer
                   position="top-right"

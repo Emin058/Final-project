@@ -5,8 +5,9 @@ import { toast } from "react-toastify";
 import Wishlist from "../Wishlist/Wishlist";
 import ButtonWishlist from "../../components/ButtonWishList/ButtonWishlist";
 import { Link } from "react-router-dom";
-
+import DetailIcon from "../../assets/icons/detailIcon.svg"
 const SingleCard = ({ product }) => {
+  
   const { addItem } = useCart();
   return (
     <>
@@ -19,7 +20,7 @@ const SingleCard = ({ product }) => {
         <div className={styles.card}>
           <img src={product.image} className={styles.cardImage} alt="..." />
           <div className={styles.card_body}>
-            <h5 className="card-title"> {product.title}</h5>
+            <h5 className={styles.card_title}> {product.title}</h5>
             <p className={styles.cardPrice}>{product.price} Euro</p>
             <div className={styles.btnFavourite}>
               <button
@@ -32,7 +33,7 @@ const SingleCard = ({ product }) => {
                 Add to cart
               </button>
               <ButtonWishlist item={product} />
-              <Link to={`/product/${product.id}`} className="btn btn-dark">detail</Link>
+              <Link to={`/product/${product.id}`} ><img src={DetailIcon}/></Link>
             </div>
           </div>
         </div>

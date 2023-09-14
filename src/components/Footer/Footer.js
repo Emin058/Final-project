@@ -39,7 +39,7 @@ const Footer = () => {
                 <h5 className={styles.footerBoldItems}>{t("header.20")}</h5>
                 <Link className={styles.footerBlogLink} to="/blogs">{t("header.21")}</Link>
                 {/* <p>{t("header.22")}</p> */}
-               <div> <Link className={styles.footerSellerLink}>{t("header.23")}</Link></div>
+               <div> <Link to="/register" className={styles.footerSellerLink}>{t("header.23")}</Link></div>
               </div>
               
             </div>

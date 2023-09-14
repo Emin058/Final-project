@@ -22,7 +22,7 @@ const ButtonWishlist = ({item}) => {
 
   return (
     <div >
-      <button onClick={()=>toggleFunction(item)}>
+      <button onClick={()=>toggleFunction(item)} style={{fontSize:"30px"}}>
       {
         inWishlist(item .id) ? <i className="fa-solid fa-heart"></i> : <i className="fa-regular fa-heart"></i>
       }

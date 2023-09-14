@@ -3,21 +3,21 @@ import styles from "./Shop.module.scss";
 import SingleCard from "../SingleCard/SingleCard";
 import { GlobalData } from "../../context/GlobalContext";
 import { Select } from "antd";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
-
-import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation } from "react-i18next";
+import  i18n  from "i18next";
 import { GlobalTheme } from "../../context/ThemeContext";
 import Aos from "aos";
 import { hover } from "@testing-library/user-event/dist/hover";
-import { useTranslation } from "react-i18next";
+
 
 const Shop = () => {
+
+
+ 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   useEffect(() => {
     Aos.init();
@@ -35,7 +35,7 @@ const Shop = () => {
   const { toggleMode } = useContext(GlobalTheme);
 
   const myCategories = [
-    ,
+    
     "All",
     "Trousers",
     "Shoes",
@@ -89,6 +89,7 @@ else if (value === "z-a"){
         <section className={styles.hero}>
           <div class="container">
             <div class="row">
+              
                <div>
                <Select 
                   defaultValue="All"

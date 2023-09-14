@@ -62,7 +62,7 @@ alert("sehv")
           />
         </div>
        
-        <button type="submit" className="btn btn-primary">
+        <button style={{marginRight:"10px"}} type="submit" className="btn btn-primary">
           Login
         </button>
         <Link type="submit" className="btn btn-primary" to="/register">

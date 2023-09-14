@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-import SamsungImage from "../../assets/images/samsungImage.png";
-import AppleWatchImage from "../../assets/images/appleWatchImage.png";
-import XboxImage from "../../assets/images/x-boxImage.png";
+import NewSamsungImg from "../../assets/images/newSamsungImg.jpg";
+import IphoneImg from "../../assets/images/iphone.jpg";
+import CanonImg from "../../assets/images/canon.jpg";
 import styles from "./Home.module.scss";
 import { GlobalData } from "../../context/GlobalContext";
 import SingleCard from "../SingleCard/SingleCard";
@@ -50,48 +50,34 @@ const Home = () => {
 
   return (
     <>
-      <section>
-              <div
-                id="carouselExampleFade"
-                class="carousel slide carousel-fade"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img style={{width:"100%",height:"100vh",}} src={SamsungImage} alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img style={{width:"100%",height:"100vh"}} src={AppleWatchImage} class="d-block w-100" alt="..." />
-                  </div>
-                  <div class="carousel-item">
-                    <img style={{width:"100%",height:"100vh"}} src={XboxImage} class="d-block w-100" alt="..." />
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleFade"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleFade"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-      </section>
+    <section>
+      <div className="container">
+        <div className="row">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div style={{height:"700px"}} class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={IphoneImg} class="d-block w-100" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src={NewSamsungImg} class="d-block w-100 " alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src={CanonImg} class="d-block w-100" alt="..."/>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </div>
+      </div>
+    </section>
+  
 
       <section className={styles.hero}>
         <div class="container">
@@ -168,39 +154,3 @@ const Home = () => {
 
 export default Home;
 
-// <div className="col-lg-2 col-md-4 col-sm-6 col-12 p-4">
-//             <div className={styles.box}>
-//               <img className={styles.samsungContentPhoto} src={SamsungImage} />
-//             </div>
-//           </div>
-//           <div className="col-lg-2 col-md-4 col-sm-6 col-12 p-4">
-//             <div className={styles.box}>
-//               <img
-//                 className={styles.samsungContentPhoto}
-//                 src={AppleWatchImage}
-//               />
-//             </div>
-//           </div>
-//           <div className="col-lg-2 col-md-4 col-sm-6 col-12 p-4">
-//             <div className={styles.box}>
-//               <img className={styles.samsungContentPhoto} src={XboxImage} />
-//             </div>
-//           </div>
-//              <div className="col-lg-2 col-md-4 col-sm-6 col-12 p-4">
-//             <div className={styles.box}>
-//               <img className={styles.samsungContentPhoto} src={SamsungImage} />
-//             </div>
-//           </div>
-//           <div className="col-lg-2 col-md-4 col-sm-6 col-12 p-4">
-//             <div className={styles.box}>
-//               <img
-//                 className={styles.samsungContentPhoto}
-//                 src={AppleWatchImage}
-//               />
-//             </div>
-//           </div>
-//           <div className="col-lg-2 col-md-4 col-sm-6 col-12 p-4">
-//             <div className={styles.box}>
-//               <img className={styles.samsungContentPhoto} src={XboxImage} />
-//             </div>
-//           </div>

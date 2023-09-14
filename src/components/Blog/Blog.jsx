@@ -8,6 +8,9 @@ import { useTranslation } from "react-i18next";
 import { GlobalTheme } from "../../context/ThemeContext";
 import { useSelector } from "react-redux";
 import BlogCard from "../BlogCard/BlogCard";
+import ScrollBtn from "../../ScrollBtn/ScrollBtn";
+import blogImg3 from "../../assets/images/blog-img-3.jpg";
+import blogImg4 from "../../assets/images/blog-img-4.jpg"
 
 const Blog = () => {
 
@@ -27,6 +30,7 @@ useEffect(() => {
        
     <div className={styles.hero}>
       <h1 className={styles.pageName}>{t("header.36")}</h1>
+      
       <section>
         <div className="container">
           <div className="row">
@@ -88,7 +92,7 @@ useEffect(() => {
             </div>
             <div className="col-lg-6 p-2 col-md-6 col-sm-12 col-12">
               <div className={styles.card}>
-                <img className={styles.boxImage} src={blogImg2} alt="" />
+                <img className={styles.boxImage} src={blogImg3} alt="" />
                 <div className={styles.contentBox}>
                   <div>
                     <span>
@@ -116,7 +120,7 @@ useEffect(() => {
             </div>
             <div className="col-lg-6 p-2 col-md-6 col-sm-12 col-12">
               <div className={styles.card}>
-                <img className={styles.boxImage} src={blogImg2} alt="" />
+                <img className={styles.boxImage} src={blogImg4} alt="" />
                 <div className={styles.contentBox}>
                   <div>
                     <span>

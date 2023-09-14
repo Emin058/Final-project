@@ -21,9 +21,9 @@ const Cart = () => {
   };
   return (
     <div>
-      <div className="container mt-5">
+      <div  className="container mt-5">
         {items.length === 0 ? (
-          "No items in cart"
+          <h1>No order for now</h1>
         ) : (
           <table className="table">
             <thead>
@@ -83,9 +83,11 @@ const Cart = () => {
 
             <h1>Cart total :{cartTotal} Euro</h1>
 
-            <button className="btn btn-success" onClick={checkUser}>
+            <button  className="btn btn-success" onClick={checkUser}>
+            
               Buy
             </button>
+            
           </table>
         )}
       </div>

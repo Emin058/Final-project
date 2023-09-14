@@ -35,7 +35,7 @@ i18n.changeLanguage(lang);
       <header className={styles.headerTopContainer}>
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 d-flex justify-content-start align-items-center ">
+            <div  className="col-lg-6 d-flex justify-content-start align-items-center ">
               <div>
                 <Link to="/">
                   <img src={ShopLogo} />
@@ -52,8 +52,8 @@ i18n.changeLanguage(lang);
               </div>
             </div> */}
             <div className="col-lg-6  d-flex justify-content-end align-items-center  ">
-            <label className={styles.switch}>
-                  <input
+            <label  className={styles.switch}>
+                  <input 
                     type="checkbox"
                     checked={darkMode}
                     onClick={() => toggleMode()}
@@ -61,7 +61,7 @@ i18n.changeLanguage(lang);
                   <div className={styles.slider}></div>
                 </label>
                 
-              <div>
+              <div style={{marginLeft:"10px"}}>
                 <Select
                   defaultValue={i18n.language}
                   style={{ width: 120 }}
@@ -73,21 +73,21 @@ i18n.changeLanguage(lang);
                   ]}
                 />
 
-                <Link className={styles.headerTopItems} to="/wishlist">
+                <Link  className={styles.headerTopItems} to="/wishlist">
                   <img className={styles.favouriteImage} src={Favourite} />
                   <div className={styles.numberOfFavourites}>
                     {" "}
-                    {wishlistItems.length === 0 ? "" :items.length}{" "}
+                    {wishlistItems.length === 0 ? "" : wishlistItems.length/2}{" "}
                   </div>
                 </Link>
-                <Link className={styles.headerTopItems} to="/cart">
-                  <img className={styles.basketImage} src={ShopBag} />
+                <Link className={styles.basketIcon} to="/cart">
+                  <img  className={styles.basketImage} src={ShopBag} />
                   <div className={styles.numberOfBasket}>{items.length === 0 ? "" :items.length} </div>
                 </Link>
 
               </div>
               
-              <Account/>
+              <Account />
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import AboutLogo from "../../assets/images/aboutLogo.png";
 import styles from "./About.module.scss";
 import { Link } from "react-router-dom";
@@ -9,7 +9,10 @@ import { useTranslation } from "react-i18next";
 const About = () => {
   const { toggleMode } = useContext(GlobalTheme);
   const { t } = useTranslation();
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+ 
   return (
     <div className={styles.hero}>
       <h1 className={styles.pageName}>{t("header.28")}</h1>

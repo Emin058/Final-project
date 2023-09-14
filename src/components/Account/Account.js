@@ -42,7 +42,7 @@ const Account = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Hi {admin.name}
+           {admin.name}
           </button>
           <ul className="dropdown-menu">
             <li>

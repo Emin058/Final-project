@@ -15,6 +15,10 @@
  
 };
 
+.card_title{
+  font-weight: bold;
+}
+
 .card_body{
   padding: 10px;
   display: flex;
@@ -25,7 +29,7 @@
 
 
 .cardPrice{
-  color: orchid;
+  color: brown;
   font-weight: bold;
   font-size: larger;
 };
