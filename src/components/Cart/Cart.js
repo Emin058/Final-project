@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useCart } from "react-use-cart";
 import styles from "./Cart.module.scss";
 import { toast } from "react-toastify";
@@ -11,9 +11,14 @@ const Cart = () => {
 
   const location = useNavigate();
 
+  const [txt, setTxt] = useState('No order for now')
+
+  let h1 = document.querySelector(".h1");
+
   const checkUser = () => {
     if (localStorage.getItem("NewUser") || localStorage.getItem("Admin")) {
       setItems([]);
+      setTxt('Your order is done')
     } else {
       toast.error("create an account");
       location("/register");
@@ -21,9 +26,9 @@ const Cart = () => {
   };
   return (
     <div>
-      <div  className="container mt-5">
+      <div className="container mt-5">
         {items.length === 0 ? (
-          <h1>No order for now</h1>
+          <h1 className="h1 p-5">{txt}</h1>
         ) : (
           <table className="table">
             <thead>
@@ -83,11 +88,9 @@ const Cart = () => {
 
             <h1>Cart total :{cartTotal} Euro</h1>
 
-            <button  className="btn btn-success" onClick={checkUser}>
-            
+            <button className="btn btn-success" onClick={checkUser}>
               Buy
             </button>
-            
           </table>
         )}
       </div>

@@ -51,8 +51,6 @@ const Home = () => {
   return (
     <>
     <section>
-      <div className="container">
-        <div className="row">
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div style={{height:"700px"}} class="carousel-inner">
     <div class="carousel-item active">
@@ -74,8 +72,6 @@ const Home = () => {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-        </div>
-      </div>
     </section>
   
 
