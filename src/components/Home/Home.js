@@ -86,7 +86,6 @@ const Home = () => {
       </section>
       <section className={styles.couponSection}>
         <div class="container">
-          <div class="row">
             <div className={styles.infoYellowBox}>
               <div className={styles.iconAndName}>
                 <img className={styles.advertIcons} src={basket} />
@@ -117,12 +116,10 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
       <section className={styles.backImage}>
         <div class="container">
-          <div class="row">
             <div
               style={{
                 width: "100%",
@@ -136,12 +133,11 @@ const Home = () => {
             >
               <h1>Get 20% Off Discount Coupon</h1>
               <p className={styles.paragraph}>by Subscribe our Newsletter</p>
-              <div style={{ textAlign: "center" }}>
+              <div style={{ textAlign: "center", width: '100%' }}>
                 <input placeholder="EMAIL ADDRESS" className={styles.input} />
                 <button className={styles.couponBtn}>Get the Coupon</button>
               </div>
             </div>
-          </div>
         </div>
       </section>
     </>
