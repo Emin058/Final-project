@@ -21,7 +21,7 @@ import BlueCap from "../assets/images/capblue.jpg";
 export const myData = [
   {
     id: 1,
-    title: "CALFSKIN LEATHER BACKPACK",
+    title: "CALFSKIN BACKPACK",
     price: 1000,
     image: BlackBag,
     category:"Bags"
@@ -42,21 +42,21 @@ export const myData = [
   },
   {
     id: 4,
-    title: "EAU DE PARFUM ROYAL EAGLE ",
+    title: "ROYAL VIP ",
     price: 220 ,
     image: BlueParfum,
     category:"Parfums"
   },
   {
     id: 5,
-    title: "EAU DE PARFUM ROYAL EAGLE ",
+    title: "ROYAL EAGLE ",
     price: 350,
     image: GoldParfum,
     category:"Parfums"
   },
   {
     id: 6,
-    title: "EAU DE PARFUM ROYAL RED ",
+    title: "ROYAL RED ",
     price: 300,
     image: BrownParfum,
     category:"Parfums"
@@ -84,14 +84,14 @@ export const myData = [
   },
   {
     id: 10,
-    title: "SUEDE DRIVING SHOES",
+    title: "SUEDE SHOES",
     price: 2900,
     image: OrangeShoes,
     category:"Shoes"
   },
   {
     id: 11,
-    title: "MATTED CROCODILE LOAFERS",
+    title: "MATTED LOAFERS",
     price: 3500,
     image: BlackShoes,
     category:"Shoes"
