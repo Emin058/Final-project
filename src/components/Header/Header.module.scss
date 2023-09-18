@@ -11,9 +11,9 @@
   
  
  background-color: var(--aboutBgColor);
- h1{
-  color: var(--textColor)
- }
+//  h1{
+//   color: var(--textColor)
+//  }
 };
 
 
@@ -69,7 +69,8 @@ color: black;
 text-decoration: none;
 font-weight: 600;
 font-size: 20px;
-margin-right: 30px
+margin-right: 30px;
+
 
 
 };
@@ -81,6 +82,8 @@ margin-right: 30px
   justify-content: center;
   padding: 20px 0;
   overflow-y: hidden;
+  
+
 };
 
 .sellerBtn{
@@ -148,10 +151,10 @@ font-weight: 500;
     border-radius: 50%;
   }
   input:checked + .slider {
-    background-color: black
+    background-color: rgb(176, 125, 37)
   }
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #3d6280;
   }
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);

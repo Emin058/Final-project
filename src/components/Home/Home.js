@@ -52,12 +52,12 @@ const Home = () => {
     <>
     <section>
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div style={{height:"700px"}} class="carousel-inner">
+  <div  class="carousel-inner">
     <div class="carousel-item active">
-      <img src={IphoneImg} class="d-block w-100" alt="..."/>
+      <img  src={NewSamsungImg} class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src={NewSamsungImg} class="d-block w-100 " alt="..."/>
+      <img src={IphoneImg} class="d-block w-100 " alt="..."/>
     </div>
     <div class="carousel-item">
       <img src={CanonImg} class="d-block w-100" alt="..."/>

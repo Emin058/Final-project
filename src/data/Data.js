@@ -28,7 +28,7 @@ export const myData = [
   },
   {
     id: 2,
-    title: "HANDMADE BACKPACK",
+    title: "HANDMADE BACK",
     price: 1500,
     image: WhiteBag,
     category:"Bags"

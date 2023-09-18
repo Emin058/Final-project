@@ -63,11 +63,11 @@ const Footer = () => {
               class="col-lg-6 col-md-6 p-2"
             >
               <div className={styles.footerIcons}>
-                <img className={styles.webLinks} src={InstagramLogo} />
+                {/* <img className={styles.webLinks} src={InstagramLogo} /> */}
                 <img className={styles.webLinks} src={FacebookLogo} />
-                <img className={styles.webLinks} src={YoutubeLogo} />
+                {/* <img className={styles.webLinks} src={YoutubeLogo} /> */}
               </div>
-              <div>
+              <div className={styles.year}>
                 &copy;2022{" "}
                 <Link
                   to="https://quomodosoft.com/"

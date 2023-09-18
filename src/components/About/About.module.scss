@@ -2,9 +2,11 @@
 .hero{
   width: 100%;
  background-color: var(--aboutBgColor);
-//  h1{
-//   color: var(--textColor)
-//  }
+
+ h1,.aboutWebsite,.h1_commerce,ul,.contactBtn{
+  color: var(--textColor)
+ };
+
 }
 
 
@@ -13,7 +15,7 @@
   margin-bottom: 80px;
   background-color: var(--aboutBgColor);
   padding: 50px;
-  
+ 
 };
 
 .infoAboutContainer{
