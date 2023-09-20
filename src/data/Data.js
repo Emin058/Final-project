@@ -24,7 +24,8 @@ export const myData = [
     title: "CALFSKIN BACKPACK",
     price: 1000,
     image: BlackBag,
-    category:"Bags"
+    category:"Bags",
+    
   },
   {
     id: 2,

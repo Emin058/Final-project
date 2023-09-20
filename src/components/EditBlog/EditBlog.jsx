@@ -69,7 +69,7 @@ const EditBlog = () => {
           </div>
 
           <button type="submit" className="btn btn-primary">
-            edit blog
+          Update
           </button>
         </form>
       </div>

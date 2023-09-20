@@ -48,7 +48,7 @@ const Dashboard = () => {
                         to={`/editBlog/${item.id}`}
                         className="btn btn-warning"
                       >
-                        Update
+                        Edit Blog
                       </Link>
                     </td>
                   </tr>

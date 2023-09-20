@@ -36,9 +36,9 @@ const Header = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 d-flex justify-content-start align-items-center ">
-                            <div>
+                            <div className={styles.shopLogo}>
                                 <Link to="/">
-                                    <img src={ShopLogo}/>
+                                    <img  src={ShopLogo}/>
                                 </Link>
                             </div>
                         </div>
@@ -95,7 +95,7 @@ const Header = () => {
             </header>
 
             <header className={styles.navbar_items_container}>
-                    <div className="logo">
+                    <div className={styles.logo}>
                         <Link className={styles.header_navbar} to="/">
                             {t("header.0")}
                         </Link>

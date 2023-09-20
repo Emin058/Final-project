@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Register = () => {
 
   useEffect(() => {
@@ -60,9 +60,12 @@ const submitForm=(e)=>{
           />
         </div>
        
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary" >
           Register
         </button>
+        <Link  to="/login" style={{marginLeft:"15px"}} type="submit" className="btn btn-primary" >
+          Login
+        </Link>
       </form>
     </div>
   );

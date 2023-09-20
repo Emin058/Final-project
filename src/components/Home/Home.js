@@ -74,7 +74,7 @@ const Home = () => {
 </div>
     </section>
   
-
+<h2 style={{textAlign:"center",marginTop:"10px",marginBottom:"10px"}}>Featured products</h2>
       <section className={styles.hero}>
         <div class="container">
           <div class="row">
@@ -89,28 +89,28 @@ const Home = () => {
             <div className={styles.infoYellowBox}>
               <div className={styles.iconAndName}>
                 <img className={styles.advertIcons} src={basket} />
-                <div>
+                <div className={styles.advertDiv}>
                   <b>FREE SHIPPING</b>
                   <div>When ordering over $100</div>
                 </div>
               </div>
               <div className={styles.iconAndName}>
                 <img className={styles.advertIcons} src={refresh} />
-                <div>
+                <div className={styles.advertDiv}>
                   <b>FREE RETURN</b>
-                  <div>Get Return within 30 days</div>
+                  <div>Get Return within</div>
                 </div>
               </div>
               <div className={styles.iconAndName}>
                 <img className={styles.advertIcons} src={secure} />
-                <div>
-                  <b>SECURE PAYMENT</b>
-                  <div>100% Secure Online Payment</div>
+                <div className={styles.advertDiv}>
+                  <b >SECURE PAYMENT</b>
+                  <div>100% Secure Online </div>
                 </div>
               </div>
               <div className={styles.iconAndName}>
                 <img className={styles.advertIcons} src={quality} />
-                <div>
+                <div className={styles.advertDiv}>
                   <b>BEST QUALITY</b>
                   <div>Original Product Guarenteed</div>
                 </div>

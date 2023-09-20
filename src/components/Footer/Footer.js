@@ -80,7 +80,7 @@ const Footer = () => {
             </div>
 
             <div class="col-lg-6 col-md-6 p-2 d-flex justify-content-end">
-              <img src={PaymentsImage} />
+              <img className={styles.footerImg} src={PaymentsImage} />
             </div>
           </div>
         </div>

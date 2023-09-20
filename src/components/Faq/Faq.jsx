@@ -16,10 +16,11 @@ const FAQ = () => {
   return (
     <section className={styles.hero}>
       <div className="container">
-        <div className="row">
+        <div  className="row">
           <div style={{width:"100%"}}>
-          <h1>{t("header.52")} <br></br>{t("header.53")} </h1>
-          <h1>{t("header.45")}  </h1>
+          <h1 style={{marginTop:"25px"}}>{t("header.52")} </h1>
+          <h1> {t("header.53")} </h1>
+          <h1 style={{marginBottom:"25px"}}>{t("header.45")}  </h1>
           <div>
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">

@@ -39,7 +39,8 @@ section{
 
 .footerFaqLink,.footerSellerLink,.footerSupportLink,.footerBlogLink,.footerBestProductstLink,.footerAboutLink{
   text-decoration: none;
-  color: grey;
+  // color: grey;
+  color: var(--textColor);
 };
 
 
@@ -77,10 +78,17 @@ section{
 };
 
 p{
-  color: grey;
+  color: var(--textColor);
 }
 
-// @media (max-width:576px) {
-//   .footerIcons{height: ;}
-// }
+@media (min-width:390px) {
+  .footerImg{
+    margin: auto
+  };
+  
+  
+  
+
+}
+
 
