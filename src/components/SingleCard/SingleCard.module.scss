@@ -1,4 +1,8 @@
-
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .card{
   width: 100%;
   height: 100%;
@@ -36,24 +40,31 @@
 
 .btnFavourite{
   width: 100%;
-  height: 50px;
+  // height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px
 };
 
-.addBtn{
-   background-color: green;
-  border: none;
-  border-radius: 3px;
-  color: white;
-  width: 100px;
-  height: 35px;
-};
+// .addBtn{
+//   //  background-color: green;
+//   // border: none;
+//   // border-radius: 3px;
+//   // color: white;
+//   // width: 100px;
+//   // height: 35px;
+// };
 
 @media (max-width:576px) {
  .card{
-  font-size: 20px;
+  height: 400px
  }
+  };
+
+  @media (max-width:768px) {
+    .btnFavourite{
+      margin-bottom: 40px;
+     }
   }
+  

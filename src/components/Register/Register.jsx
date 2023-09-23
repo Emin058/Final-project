@@ -35,13 +35,14 @@ const submitForm=(e)=>{
           <label htmlFor="exampleInputEmail1" className="form-label">
             Name
           </label>
-          <input type="text" className="form-control" name="name" onChange={handleChange} />
+          <input required type="text" className="form-control" name="name" onChange={handleChange} />
         </div>
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">
             Email address
           </label>
           <input
+          required
             type="email"
             className="form-control"
           name="email"
@@ -53,6 +54,7 @@ const submitForm=(e)=>{
             Password
           </label>
           <input
+          required
             type="password"
             className="form-control"
             name="password"

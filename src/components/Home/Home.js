@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-import NewSamsungImg from "../../assets/images/newSamsungImg.jpg";
-import IphoneImg from "../../assets/images/iphone.jpg";
-import CanonImg from "../../assets/images/canon.jpg";
+import stefano1 from "../../assets/images/stefanoclothes.jpg";
+import stefano0 from "../../assets/images/stefanobrown.jpg";
+import stefano2 from "../../assets/images/istockphoto-1415133974-1024x1024.jpg";
 import styles from "./Home.module.scss";
 import { GlobalData } from "../../context/GlobalContext";
 import SingleCard from "../SingleCard/SingleCard";
@@ -54,13 +54,13 @@ const Home = () => {
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div  class="carousel-inner">
     <div class="carousel-item active">
-      <img  src={NewSamsungImg} class="d-block w-100" alt="..."/>
+      <img  src={stefano0} class="d-block w-100" alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src={IphoneImg} class="d-block w-100 " alt="..."/>
+      <img src={stefano1} class="d-block w-100 " alt="..."/>
     </div>
     <div class="carousel-item">
-      <img src={CanonImg} class="d-block w-100" alt="..."/>
+      <img src={stefano2} class="d-block w-100" alt="..."/>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
